@@ -23,8 +23,10 @@ void CreateArray(int[] numbers)
 }
 void PrintArray(int[] numbers)
 {
+    Console.Write("[ ");
     foreach (int number in numbers)
     {
-        Console.Write($"{number}, ");
+        Console.Write($"{number} ");
     }
+    Console.WriteLine("]");
 }
