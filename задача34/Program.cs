@@ -21,11 +21,14 @@ void CreateArray(int[] numbers)
     {
         numbers[i] = new Random().Next(100, 1000);
     }
+
 }
 void PrintArray(int[] numbers)
 {
+    Console.Write("[ ");
     foreach (int number in numbers)
     {
-        Console.Write($"{number}, ");
+        Console.Write($"{number} ");
     }
+    Console.WriteLine("]");
 }
